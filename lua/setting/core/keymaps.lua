@@ -27,8 +27,8 @@ keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list open avail
 keymap.set("n", "<leader>lds", "<cmd>Telescope lsp_document<cr>") -- list all function/structure/classes/modulus current buffer
 
 -- hop cmd
-keymap.set("n", "<leader>hw", ":HopWord<cr>")
-keymap.set("n", "<leader>hww", ":HopWordMW<cr>")
+keymap.set("n", "<leader>jp", ":HopWord<cr>")
+keymap.set("n", "<leader>hw", ":HopWordMW<cr>")
 keymap.set("n", "<leader>hc", ":HopChar2<cr>")
 keymap.set("n", "<leader>hcc", ":HopChar2MW<cr>")
 keymap.set("n", "<leader>hl", ":HopLine<cr>")

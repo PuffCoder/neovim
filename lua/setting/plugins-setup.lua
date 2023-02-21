@@ -45,6 +45,9 @@ return require("packer").startup(function(use)
 	use({ "williamboman/mason.nvim" })
 	use({ "williamboman/mason-lspconfig.nvim" })
 
+	-- Goyo
+	use({ "junegunn/goyo.vim" })
+
 	-- configuring lsp servers
 	use("neovim/nvim-lspconfig") -- Configurations for Nvim LSP
 	use("hrsh7th/cmp-nvim-lsp") -- for autocompletion
@@ -55,11 +58,11 @@ return require("packer").startup(function(use)
 			require("lspsaga").setup({})
 		end,
 	}) -- enhanced lsp uis
-  
-  use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
-  use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
-  use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
-  use("simrat39/rust-tools.nvim") -- rust server
+
+	use({ "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" })
+	use("jose-elias-alvarez/typescript.nvim") -- additional functionality for typescript server (e.g. rename file & update imports)
+	use("onsails/lspkind.nvim") -- vs-code like icons for autocompletion
+	use("simrat39/rust-tools.nvim") -- rust server
 
 	-- formatting & linting
 	use("jose-elias-alvarez/null-ls.nvim") -- configure formatters & linters
